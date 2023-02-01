@@ -7,7 +7,7 @@
   "scripts": {
     "compile": "tsc",
     "start": "npm run compile && node ./dist/index.js",
-    "dev-server": "tsc-watch --noClear -p ./src/tsconfig.json --onSuccess \"node ./dist/server.js\""
+    "dev-server": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"npm run start\""
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,10 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@apollo/server": "^4.3.2"
+    "@apollo/server": "^4.3.2",
+    "bcrypt": "^5.1.0",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0"
   }
 }
